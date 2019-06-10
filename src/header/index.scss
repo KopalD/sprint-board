@@ -1,0 +1,60 @@
+@import '../app.scss';
+
+.app-header{
+    margin-top: 20px;
+  }
+  
+  .header-content {
+    margin-left: 15px;
+    line-height: 1;
+  }
+  
+  .heading {
+    font-family: Fresh-Eaters;
+    font-size: 4em;
+  } 
+  
+  .team-badge {
+    color: $primary-font-color;
+    background: $primary-back-color;
+    padding: 10px 20px 10px 20px;
+    max-width: 180px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .build-status-icon {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .spin-ok {
+    animation: build-icon-spin infinite 5s linear;
+  }
+  
+  .spin-build {
+    animation: build-icon-spin infinite .5s linear;
+  }
+
+  .spin-failed {
+    animation: build-icon-spin-break infinite .5s linear;
+  }
+  
+  @keyframes build-icon-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes build-icon-spin-break {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
