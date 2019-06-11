@@ -7,7 +7,7 @@ import success from '../assets/icons/green.png';
 import building from '../assets/icons/yellow.png';
 import failure from '../assets/icons/red.png';
 import offline from '../assets/icons/gray.png';
-import { BUILD_STATUS } from '../contants/builds';
+import { BUILD_STATUS } from '../constants/builds';
 
 class AppHeader extends Component {
 
