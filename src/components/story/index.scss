@@ -1,0 +1,21 @@
+@import '../../app.scss';
+
+.story {
+    height: 40vh;
+    background: #3E4249;
+}
+
+.story .col {
+margin: 20px 0;
+padding: 50px 0;
+font-size: 35px;
+}
+
+td, th {
+    color: #FFF;
+}
+
+.story table {
+    margin-top: 20px;
+    font-family: "Montserrat-Regular";
+}

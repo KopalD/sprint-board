@@ -1,0 +1,32 @@
+@import "../../app.scss";
+
+.issues-info {
+  height: 20vh;
+  background: #fff;
+  color: black;
+}
+
+.issues-info .header {
+  font-family: "Montserrat-SemiBold";
+  font-size: 25px;
+}
+
+.numberCircle {
+  width: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  border: 2px solid;
+  margin: 50px 15px;
+}
+
+.widget-normal {
+  background: #FDA006;
+  color: #000;
+}
+
+.widget-warning {
+  background: #D62929;
+  color: #FFF;
+}

@@ -5,28 +5,28 @@
   }
   
   .header-content {
-    margin-left: 15px;
     line-height: 1;
   }
   
   .heading {
     font-family: Fresh-Eaters;
-    font-size: 4em;
+    font-size: 3.1em;
   } 
   
   .team-badge {
     color: $primary-font-color;
     background: $primary-back-color;
-    padding: 10px 20px 10px 20px;
-    max-width: 180px;
-    margin-top: 10px;
+    padding: 8px 16px 8px 16px;
+    max-width: 160px;
+    margin-top: 8px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 0.9em;
   }
   
   .build-status-icon {
-    height: 100px;
-    width: 100px;
+    height: 85px;
+    width: 85px;
   }
   
   .spin-ok {

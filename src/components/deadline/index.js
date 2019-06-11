@@ -6,7 +6,7 @@ import { SPRINT_SPAN } from '../../configs/sprint';
 import DateService from "../../services/dateService";
 import './index.scss';
 
-class Deadline extends Component {
+class DeadlineComponent extends Component {
 
     constructor(props) {
         super(props);
@@ -39,4 +39,4 @@ class Deadline extends Component {
     }
 }
 
-export default Deadline;
+export default DeadlineComponent;
