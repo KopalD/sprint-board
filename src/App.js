@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="container-fluid">
       <AppHeader />
-      <div className="row">
+      <div className="row mt-sm-3">
         <div className="col-md-3">
 
         <StoryComponent />

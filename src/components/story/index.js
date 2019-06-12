@@ -13,7 +13,7 @@ class StoryComponent extends Component {
         return (
             <div class="widget story">
                 <span className="header">Stories</span>
-                <table class="table">
+                <table class="table col-md-11">
                     <tbody>
                         <tr>
                             <td scope="row">To-Do</td>
