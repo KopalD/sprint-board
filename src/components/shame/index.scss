@@ -1,0 +1,24 @@
+@import "../../app.scss";
+
+.shame-board {
+  text-align: center;
+  padding: 15px;
+  background: #3e4249;
+  border-radius: 5px;
+}
+
+.shame-name{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.shame-description{
+  font-size: 14px;
+}
+
+.face {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+}

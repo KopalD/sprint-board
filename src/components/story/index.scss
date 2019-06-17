@@ -1,21 +1,44 @@
-@import '../../app.scss';
+@import "../../app.scss";
 
 .story {
-    height: 40vh;
-    background: #3E4249;
+  height: 40vh;
+  background: #3e4249;
 }
 
 .story .col {
-margin: 20px 0;
-padding: 50px 0;
-font-size: 35px;
+  margin: 20px 0;
+  padding: 50px 0;
 }
 
-td, th {
-    color: #FFF;
+td,
+th {
+  color: #fff;
 }
 
 .story table {
-    margin-top: 20px;
-    font-family: "Montserrat-Regular";
+  margin-top: 20px;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
 }
+
+.circle {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.blue {
+  background-color: #3498db;
+}
+.green {
+  background-color: #16a085;
+}
+.yellow {
+  background-color: #F9D45F;
+}
+.orange {
+    background-color: #F49322;
+  }

@@ -1,0 +1,31 @@
+@import "../../app.scss";
+
+.col-md-3 {
+  max-width: 22%;
+}
+
+.category {
+  padding: 5px 10px;
+  background: #7c3fee;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Montserrat-SemiBold";
+}
+
+.slave-board {
+  margin-top: 15px;
+  padding: 0;
+}
+
+.warning {
+  background: #dc3545;
+}
+
+.slave-board {
+  .table th,
+  .table td {
+    padding: 0.4rem;
+    font-size: 14px;
+  }
+}
