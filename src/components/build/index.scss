@@ -4,15 +4,15 @@
     margin-top: 0px !important;
 }
 
+.build-name {
+  margin-left: 10px;
+}
+
 .build-data {
   height: 20vh;
   font-family: "Montserrat-SemiBold";
   margin: 5px;
   border-radius: 5px;
-}
-
-.seperator {
-  border-right: 1px solid #fff;
 }
 
 .beat-loader {
@@ -42,4 +42,52 @@
       stroke-dashoffset: 0;
     }
   }
+
+  .bld-status.btn-lg {
+    width: 25px;
+    height: 25px;
+    padding: 10px 10px;
+    border-radius: 20px;
+  }
+
+  .tip {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid #DADADA;
+  }
   
+  .tip-up {
+    top: -25px; /* Same as body margin top + border */
+    left: 5px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+
+  .dialogbox .body {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin: 20px 10px;
+    padding: 5px;
+    background-color: #DADADA;
+    border-radius: 3px;
+    border: 5px solid #DADADA;
+  }
+  
+  .body .message {
+    min-height: 30px;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    font-size: 12px;
+  }
+
+  .message span {
+    padding-top: 5px;
+    display: block;
+  }
