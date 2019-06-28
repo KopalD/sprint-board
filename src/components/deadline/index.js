@@ -2,7 +2,8 @@
 import React, { Component } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 
-import { SPRINT_SPAN } from '../../configs/sprint';
+import { SPRINT, SPRINT_SPAN } from '../../configs/sprint';
+import { REFRESH_RATE } from '../../configs/app';
 import DateService from "../../services/dateService";
 import './index.scss';
 
@@ -14,7 +15,7 @@ class DeadlineComponent extends Component {
     }
 
     componentDidMount() {
-        this.interval = setInterval(() => this.tick(), 3000);
+        this.interval = setInterval(() => this.tick(), REFRESH_RATE.SPRINT);
     }
     componentWillUnmount() {
         clearInterval(this.interval);
@@ -22,7 +23,8 @@ class DeadlineComponent extends Component {
 
     tick() {
         this.setState({
-            daysPassed: DateService.computePercentageRemaining(SPRINT_SPAN.START_DATE, SPRINT_SPAN.END_DATE, true)
+            completion: DateService.computePercentageRemaining(SPRINT_SPAN.START_DATE, SPRINT_SPAN.END_DATE, SPRINT_SPAN.ONLY_BUSINESS_DAYS),
+            daysRemaining: DateService.computeTotalDays(new Date(), SPRINT_SPAN.END_DATE, false)
         });
     }
 
@@ -30,10 +32,10 @@ class DeadlineComponent extends Component {
         return (
             <footer className="footer">
                 <div className="sprint-info">
-                    <div className="header">SPRINT 23 : VODKA </div>
-                    <div> 7 Days remaining ....</div>
+                    <div className="header">{SPRINT.NAME}</div>
+                    <div> {this.state.daysRemaining} Days remaining ....</div>
                 </div>
-                <ProgressBar variant="danger" now={this.state.daysPassed} />
+                <ProgressBar variant="danger" now={this.state.completion} />
             </footer>
         );
     }

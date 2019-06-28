@@ -1,3 +1,5 @@
+import { stat } from "fs";
+
 const DateService = {
 
     computeRemainingWorkingDays: function (startDate, endDate) {
@@ -27,6 +29,18 @@ const DateService = {
     },
 
     computeTotalDays: function (startDate, endDate, onlyWorkingDays) {
+        if(!(startDate instanceof Date))
+        {
+            startDate = new Date(startDate)
+        }
+
+        if(!(endDate instanceof Date))
+        {
+            endDate = new Date(endDate)
+        }
+
+        startDate.setHours(0,0,0,0);
+        
         if (onlyWorkingDays) {
             return this.computeRemainingWorkingDays(startDate, endDate);
         } else {
