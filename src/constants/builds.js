@@ -1,6 +1,6 @@
 export const BUILD_STATUS = {
-    SUCCESS  : "SUCCESS",
+    PASSING  : "PASSING",
     BUILDING : "BUILDING",
-    FAILED   : "FAILED",
+    FAILING  : "FAILING",
     OFFLINE  : "OFFLINE"
 }

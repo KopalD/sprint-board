@@ -4,7 +4,7 @@ const SPRINT = {
 }
 const SPRINT_SPAN = {
     START_DATE: "06/22/2019",
-    END_DATE: "06/30/2019",
+    END_DATE: "06/31/2019",
     PASSWORD: "",
     CODE_FREEZE: {
         ENABLED: false,

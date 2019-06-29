@@ -1,19 +1,22 @@
 export default function() {
     return {
-        "status": "SUCCESS",
-        "frontend": {
-            "status": "",
-            "lastUpdated": "",
-            "lastFailed": "",
-            "buildNumber": "",
-            "trigeredBy": ""
-        },
-        "backend": {
-            "status": "",
-            "lastUpdated": "",
-            "lastFailed": "",
-            "buildNumber": "",
-            "trigeredBy": ""
-        }
+        "status": "PASSINGZ",
+        "builds" : [
+            {
+                "id": "",
+                "name": "",
+                "status": "",
+                "buildNumber": "",
+                "lastUpdated": "",
+                "triggeredBy": "",
+                "lastFailed": "",
+                "history" : [{
+                    "status": "",
+                    "buildNumber": "",
+                    "lastUpdated": "",
+                    "triggeredBy": "",
+                }]
+            }
+        ]
     }
 }

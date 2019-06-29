@@ -1,4 +1,4 @@
-@import '../app.scss';
+@import './../../app.scss';
 
 .app-header{
     margin-top: 20px;
@@ -10,19 +10,18 @@
   
   .heading {
     font-family: Fresh-Eaters;
-    font-size: 3.1em;
+    font-size: 48px;
   } 
   
   .team-badge {
     color: $primary-font-color;
     background: $primary-back-color;
     padding: 8px 16px 8px 16px;
-    max-width: 160px;
     margin-top: 8px;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 0.9em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    font-size: 14.4px;
+    font-family: "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   }

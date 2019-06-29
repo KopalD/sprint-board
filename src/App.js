@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './app.scss';
-import AppHeader from './header';
+import AppHeader from './components/header';
 import DeadlineComponent from './components/deadline';
 import IssueInfoComponent from './components/Issues';
 import StoryComponent from './components/story';
