@@ -17,18 +17,6 @@ class DeadlineBoard extends Component {
         this.labels = localization.deadline;
     }
 
-    showDays() {
-        if (this.props.sprint.daysRemaining > DAYS_THRESHOLD) {
-            return (
-                <span> {this.props.sprint.daysRemaining} {this.labels.daysRemaining}</span>
-            );
-        } else {
-            return (
-                <span> {this.labels.deadlineComing}</span>
-            );
-        }
-    }
-
     render() {
         if (this.props.sprint) {
             return (
@@ -41,7 +29,19 @@ class DeadlineBoard extends Component {
                 </div>
             );
         } else {
-            return (<Loader />);
+            return ( <Loader /> );
+        }
+    }
+
+    showDays() {
+        if (this.props.sprint.daysRemaining > DAYS_THRESHOLD) {
+            return (
+                <span> {this.props.sprint.daysRemaining} {this.labels.daysRemaining}</span>
+            );
+        } else {
+            return (
+                <span> {this.labels.deadlineComing}</span>
+            );
         }
     }
 }

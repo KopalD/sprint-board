@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
 import './app.scss';
-import AppHeader from './components/header';
-import DeadlineBoard from './components/deadline-board';
+import AppHeader from './components/app-header';
 import CodeFreezeBoard from './components/freeze-board';
+import DeadlineBoard from './components/deadline-board';
 
 import IssueInfoComponent from './components/Issues';
-import StoryComponent from './components/story';
 import SlaveBoardComponent from './components/slave';
 import ShameBoardComponent from './components/shame';
 import BuildBoardComponent from './components/build';
 import TicketBoardComponent from './components/ticket';
 import AppService from './services/app';
+import StoryBoard from './components/story-board';
 
 class App extends Component {
 
@@ -34,7 +34,7 @@ class App extends Component {
         <AppHeader />
         <div className="row mt-sm-3">
           <div className="col-md-3">
-            <StoryComponent />
+            <StoryBoard />
             <IssueInfoComponent />
           </div>
 

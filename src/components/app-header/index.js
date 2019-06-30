@@ -13,7 +13,36 @@ import './index.scss';
 
 class AppHeader extends Component {
 
-    updateHeader() {
+    constructor(props) {
+        super(props);
+        this.labels = localization.header;
+        this.buildStatus = offline;
+        this.styles = null;
+    }
+
+    render() {
+        this.checkStatus();
+
+        return (
+            <header className="app-header">
+                <div className="row">
+                    <div className="col-1">
+                        <img src={this.buildStatus} alt="status" className={this.styles} />
+                    </div>
+                    <div className="col header-content">
+                        <div className="row h-50">
+                            <font className="heading">{PROJECT.NAME}</font>
+                        </div>
+                        <div className="row">
+                            <span className="team-badge">{this.labels.team} {PROJECT.TEAM}</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        );
+    }
+
+    checkStatus() {
         this.styles = "build-status-icon ";
         if (this.props.builds) {
             switch (this.props.builds.status) {
@@ -36,29 +65,9 @@ class AppHeader extends Component {
                     break;
 
                 default:
+                    this.buildStatus = offline
             }
         }
-    }
-
-    render() {
-        this.updateHeader();
-        return (
-            <header className="app-header">
-                <div className="row">
-                    <div className="col-md-1">
-                        <img src={this.buildStatus} alt="status" className={this.styles} />
-                    </div>
-                    <div className="col-md-8 header-content">
-                        <div className="row h-50">
-                            <font className="heading">{PROJECT.NAME}</font>
-                        </div>
-                        <div className="row">
-                            <span className="team-badge">{localization.header.team} {PROJECT.TEAM}</span>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        );
     }
 }
 

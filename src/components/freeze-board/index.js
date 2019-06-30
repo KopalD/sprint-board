@@ -17,7 +17,6 @@ class CodeFreezeBoard extends Component {
     }
 
     render() {
-
         this.checkStatus();
 
         if (this.props.codeFreeze) {
@@ -42,6 +41,7 @@ class CodeFreezeBoard extends Component {
     }
 
 }
+
 function mapStateToProps(state) {
     return {
         codeFreeze: state.codeFreeze

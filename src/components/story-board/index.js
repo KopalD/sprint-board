@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import './index.scss';
 
-class StoryComponent extends Component {
+class StoryBoard extends Component {
 
     constructor(props) {
         super(props);
@@ -14,7 +14,6 @@ class StoryComponent extends Component {
             <div class="widget story">
                 <span className="header">Stories</span>
                 <table class="table col-md-11">
-                    <tbody>
                         <tr>
                             <td><div className="circle blue"></div></td>
                             <td scope="row">To-Do</td>
@@ -36,11 +35,10 @@ class StoryComponent extends Component {
                             <td scope="row">Done</td>
                             <td>1</td>
                         </tr>
-                    </tbody>
                 </table>
             </div>
         );
     }
 }
 
-export default StoryComponent;
+export default StoryBoard;
