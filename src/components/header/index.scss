@@ -1,62 +1,61 @@
-@import './../../app.scss';
+@import "./../../app.scss";
 
-.app-header{
-    margin-top: 20px;
-  }
-  
-  .header-content {
-    line-height: 1;
-  }
-  
-  .heading {
-    font-family: Fresh-Eaters;
-    font-size: 48px;
-  } 
-  
-  .team-badge {
-    color: $primary-font-color;
-    background: $primary-back-color;
-    padding: 8px 16px 8px 16px;
-    margin-top: 8px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 14.4px;
-    font-family: "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+.app-header {
+  margin-top: 20px;
+}
+
+.header-content {
+  line-height: 1;
+}
+
+.heading {
+  font-family: Fresh-Eaters;
+  font-size: 48px;
+}
+
+.team-badge {
+  color: $primary-font-color;
+  background: $primary-back-color;
+  padding: 8px 16px 8px 16px;
+  margin-top: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14.4px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  }
-  
-  .build-status-icon {
-    height: 85px;
-    width: 85px;
-  }
-  
-  .spin-ok {
-    animation: build-icon-spin infinite 5s linear;
-  }
-  
-  .spin-build {
-    animation: build-icon-spin infinite .5s linear;
-  }
+}
 
-  .spin-failed {
-    animation: build-icon-spin-break infinite .5s linear;
-  }
-  
-  @keyframes build-icon-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+.build-status-icon {
+  height: 85px;
+  width: 85px;
+}
 
-  @keyframes build-icon-spin-break {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(10deg);
-    }
+.spin-ok {
+  animation: build-icon-spin infinite 5s linear;
+}
+
+.spin-build {
+  animation: build-icon-spin infinite 0.5s linear;
+}
+
+.spin-failed {
+  animation: build-icon-spin-break infinite 0.5s linear;
+}
+
+@keyframes build-icon-spin {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes build-icon-spin-break {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}

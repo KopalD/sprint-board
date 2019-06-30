@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 
 import './app.scss';
 import AppHeader from './components/header';
-import DeadlineComponent from './components/deadline';
+import DeadlineBoard from './components/deadline-board';
+import CodeFreezeBoard from './components/freeze-board';
+
 import IssueInfoComponent from './components/Issues';
 import StoryComponent from './components/story';
 import SlaveBoardComponent from './components/slave';
 import ShameBoardComponent from './components/shame';
 import BuildBoardComponent from './components/build';
-import CodeFreezeComponent from './components/freeze';
 import TicketBoardComponent from './components/ticket';
 import AppService from './services/app';
 
@@ -51,7 +52,7 @@ class App extends Component {
                   <ShameBoardComponent />
                 </div>
                 <div className="row">
-                  <CodeFreezeComponent />
+                  <CodeFreezeBoard />
                 </div>
               </div>
             </div>
@@ -64,7 +65,7 @@ class App extends Component {
           </div>
 
         </div>
-        <DeadlineComponent />
+        <DeadlineBoard />
       </div>
     );
   }
