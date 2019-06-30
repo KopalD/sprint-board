@@ -20,23 +20,23 @@ class SlaveBoardComponent extends Component {
                 <table className="table table-borderless col-md-11">
                     <tbody>
                         <tr>
-                            <td scope="row">Nitesh Kumar</td>
+                            <td>Nitesh Kumar</td>
                             <td>4</td>
                         </tr>
                         <tr className="warning">
-                            <td scope="row">Gaurav Gupta</td>
+                            <td>Gaurav Gupta</td>
                             <td>5</td>
                         </tr>
                         <tr>
-                            <td scope="row">Mangesh Padhri</td>
+                            <td>Mangesh Padhri</td>
                             <td>2</td>
                         </tr>
                         <tr>
-                            <td scope="row">Kopal Darbari</td>
+                            <td>Kopal Darbari</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td scope="row">Pushkar Kinkar</td>
+                            <td>Pushkar Kinkar</td>
                             <td>1</td>
                         </tr>
                     </tbody>
@@ -47,15 +47,15 @@ class SlaveBoardComponent extends Component {
                 <table className="table table-borderless col-md-11">
                     <tbody>
                         <tr>
-                            <td scope="row">Anu Singla</td>
+                            <td>Anu Singla</td>
                             <td>4</td>
                         </tr>
                         <tr>
-                            <td scope="row">Vikas Giri</td>
+                            <td>Vikas Giri</td>
                             <td>5</td>
                         </tr>
                         <tr>
-                            <td scope="row">Ajendra Singh</td>
+                            <td>Ajendra Singh</td>
                             <td>2</td>
                         </tr>
                     </tbody>

@@ -16,39 +16,39 @@ class TicketBoardComponent extends Component {
       <div className="tickets">
               <table className="table">
                       <tr className="to-do">
-                          <td scope="row"> CCF-1609 </td>
-                          <td scope="row"> UI + Integration : Check positive pay : Record Activity: Edit : Desktop + Mobile </td>
-                          <td scope="row">Nitesh Kumar</td>
+                          <td> CCF-1609 </td>
+                          <td> UI + Integration : Check positive pay : Record Activity: Edit : Desktop + Mobile </td>
+                          <td>Nitesh Kumar</td>
                           <td>M</td>
                       </tr>
                       <tr className="in-progress">
-                          <td scope="row"> CCF-1609 </td>
-                          <td scope="row"> UI + Integration : Check positive pay : Record Activity </td>
-                          <td scope="row">Nitesh Kumar</td>
+                          <td> CCF-1609 </td>
+                          <td> UI + Integration : Check positive pay : Record Activity </td>
+                          <td>Nitesh Kumar</td>
                           <td>M</td>
                       </tr>
                       <tr className="in-progress">
-                          <td scope="row"> CCF-1609 </td>
-                          <td scope="row"> UI + Integration : Check positive pay : Record Activity </td>
-                          <td scope="row">Nitesh Kumar</td>
+                          <td> CCF-1609 </td>
+                          <td> UI + Integration : Check positive pay : Record Activity </td>
+                          <td>Nitesh Kumar</td>
                           <td>M</td>
                       </tr>
                       <tr className="under-testing">
-                          <td scope="row"> CCF-1609 </td>
-                          <td scope="row"> UI + Integration : Check positive pay : Record Activity </td>
-                          <td scope="row">Nitesh Kumar</td>
+                          <td> CCF-1609 </td>
+                          <td> UI + Integration : Check positive pay : Record Activity </td>
+                          <td>Nitesh Kumar</td>
                           <td>M</td>
                       </tr>
                       <tr className="in-progress">
-                          <td scope="row"> CCF-1609 </td>
-                          <td scope="row"> UI + Integration : Check positive pay : Record Activity </td>
-                          <td scope="row">Nitesh Kumar</td>
+                          <td> CCF-1609 </td>
+                          <td> UI + Integration : Check positive pay : Record Activity </td>
+                          <td>Nitesh Kumar</td>
                           <td>M</td>
                       </tr>
                       <tr>
-                          <td scope="row"> CCF-1609 </td>
-                          <td scope="row"> UI + Integration : Check positive pay : Record Activity </td>
-                          <td scope="row">Nitesh Kumar</td>
+                          <td> CCF-1609 </td>
+                          <td> UI + Integration : Check positive pay : Record Activity </td>
+                          <td>Nitesh Kumar</td>
                           <td>M</td>
                       </tr>
               </table>
