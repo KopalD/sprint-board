@@ -27,13 +27,3 @@
 .under-testing {
   border-left: 10px solid #F49322;
 }
-
-/* header */
-.table > thead > tr > th {
-  border-bottom: 0.1px solid #fff;
-}
-/* rows */
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-  border-top: 0.1px solid #fff;
-}
-
