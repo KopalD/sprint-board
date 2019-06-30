@@ -1,0 +1,39 @@
+@import "../../app.scss";
+
+
+.ticket-holder {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.ticket-holder > .header {
+  margin: 0 0 10px 5px;
+}
+
+.tickets {
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.to-do {
+  border-left: 10px solid #3498DB;
+}
+
+.in-progress {
+  border-left: 10px solid #F9D45F;
+}
+
+.under-testing {
+  border-left: 10px solid #F49322;
+}
+
+/* header */
+.table > thead > tr > th {
+  border-bottom: 0.1px solid #fff;
+}
+/* rows */
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  border-top: 0.1px solid #fff;
+}
+

@@ -1,10 +1,9 @@
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { ProgressBar } from 'react-bootstrap';
 
-import { SPRINT, SPRINT_SPAN } from '../../configs/sprint';
-import { REFRESH_RATE } from '../../configs/app';
-import DateService from "../../services/date";
+import { SPRINT } from '../../configs/sprint';
 import localization from '../../configs/localization';
 import './index.scss';
 
@@ -14,27 +13,12 @@ class DeadlineComponent extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { completion: 0, daysRemaining: 0 };
-    }
-
-    componentDidMount() {
-        this.interval = setInterval(() => this.tick(), REFRESH_RATE.SPRINT);
-    }
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
-
-    tick() {
-        this.setState({
-            completion: DateService.computePercentageRemaining(SPRINT_SPAN.START_DATE, SPRINT_SPAN.END_DATE, SPRINT_SPAN.ONLY_BUSINESS_DAYS),
-            daysRemaining: DateService.computeTotalDays(new Date(), SPRINT_SPAN.END_DATE, false)
-        });
     }
 
     showDays() {
-        if (this.state.daysRemaining > DAYS_THRESHOLD) {
+        if (this.props.sprint.daysRemaining > DAYS_THRESHOLD) {
             return (
-                <span> {this.state.daysRemaining}{localization.deadline.daysRemaining}</span>
+                <span> {this.props.sprint.daysRemaining} {localization.deadline.daysRemaining}</span>
             )
         } else {
             return (
@@ -44,16 +28,26 @@ class DeadlineComponent extends Component {
     }
 
     render() {
+        if(this.props.sprint) {
         return (
             <footer className="footer">
                 <div className="sprint-info">
                     <div className="header">{SPRINT.NAME}</div>
                     <div>{this.showDays()}</div>
                 </div>
-                <ProgressBar variant="danger" now={this.state.completion} />
+                <ProgressBar variant="danger" now={this.props.sprint.completion} />
             </footer>
         );
+    } else {
+        return (<div></div>)
+    }
+}
+}
+
+function mapStateToProps(state) {
+    return {
+        sprint: state.sprint
     }
 }
 
-export default DeadlineComponent;
+export default connect(mapStateToProps)(DeadlineComponent);

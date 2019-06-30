@@ -5,29 +5,29 @@ const PROJECT = {
 }
 
 const REFRESH_RATE = {
-    JIRA: 300000,
-    TEAMCITY: 60000,
-    SPRINT: 5000
+    APP: 10000,
+    ISSUE_TRACKER: 300000,
+    BUILD_SERVER: 30000,
+    SPRINT: 60000
 }
 
-const JIRA = {
-    URL: "",
-    USERNAME: "",
-    PASSWORD: "",
-    JQLS: {
-        STORIES: "",
-        ISSUES: ""
-    }
-}
-
-const TEAMCITY = {
+const ISSUE_TRACKER = {
+    BASE_URL: "",
     URL: "",
     AUTH: "",
-    PASSWORD: "",
+    TIMEOUT: 10000,
+    JQL: "[SPRINT_ID]",
+}
+
+const BUILD_SERVER = {
+    BASE_URL: "",
+    URL: "",
+    AUTH: "",
+    TIMEOUT: 10000,
     BUILDS: {
         UI_ARTIFACT: "",
         BACKEND: ""
     }
 }
 
-export {PROJECT, REFRESH_RATE, JIRA, TEAMCITY }
+export {PROJECT, REFRESH_RATE, ISSUE_TRACKER, BUILD_SERVER }

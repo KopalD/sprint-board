@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import './index.scss';
 
@@ -10,12 +11,20 @@ class CodeFreezeComponent extends Component {
     }
 
     render() {
+        if(this.props.codeFreeze.enabled) {
+        }
         return (
             <div className="code-freeze freeze">
-                CODE FREEZE : OFF
+                CODE FREEZE : OFF 
             </div>
         );
     }
 }
 
-export default CodeFreezeComponent;
+function mapStateToProps(state) {
+    return {
+        codeFreeze: state.codeFreeze
+    }
+}
+
+export default connect(mapStateToProps)(CodeFreezeComponent);

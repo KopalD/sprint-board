@@ -2,15 +2,15 @@
 const DateService = {
 
     computeRemainingWorkingDays: function (startDate, endDate) {
-        var elapsed, daysAfterLastSunday;
-        var ifThen = function (a, b, c) {
+        let elapsed, daysAfterLastSunday;
+        let ifThen = function (a, b, c) {
             return a === b ? c : a;
         };
     
         elapsed = endDate - startDate;
         elapsed /= 86400000;
     
-        var daysBeforeFirstSunday = (7 - startDate.getDay()) % 7;
+        let daysBeforeFirstSunday = (7 - startDate.getDay()) % 7;
         daysAfterLastSunday = endDate.getDay();
     
         elapsed -= (daysBeforeFirstSunday + daysAfterLastSunday);
@@ -18,12 +18,11 @@ const DateService = {
         elapsed += ifThen(daysBeforeFirstSunday - 1, -1, 0) + ifThen(daysAfterLastSunday, 6, 5);
     
         return Math.ceil(elapsed);
-    
     },
 
     computeRemainingDays: function (startDate, endDate) {
-        var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-        var diffDays = Math.round(Math.abs((startDate.getTime() - endDate.getTime()) / (oneDay)));
+        let oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        let diffDays = Math.round(Math.abs((startDate.getTime() - endDate.getTime()) / (oneDay)));
         return diffDays;
     },
 
@@ -48,7 +47,7 @@ const DateService = {
     },
 
     computePercentageRemaining: function (startDate, endDate, onlyWorkingDays) {
-        var start, end, today, daysPassed, totalDays, percent;
+        let start, end, today, daysPassed, totalDays, percent;
 
         start = new Date(startDate);
         end = new Date(endDate);
@@ -60,7 +59,7 @@ const DateService = {
 
         percent = ((daysPassed - 1)  / totalDays) * 100;
         return percent;
-    }
+    },
 
 };
 
