@@ -1,4 +1,15 @@
 const literals = {
+    "header" : {
+        "team": "TEAM : "
+    },
+    "story" : {
+        "header" : "Stories",
+        "todo": "To-Do",
+        "progress": "In-Progress",
+        "testing": "Under-Testing",
+        "done": "Done",
+
+    },
     "deadline" : {
         "daysRemaining" : ` Days remaining ...`,
         "deadlineComing" : `Deadline is coming ...`,
@@ -6,10 +17,8 @@ const literals = {
     "codeFreeze": {
         "on" : "CODE FREEZE : ON",
         "off" : "CODE FREEZE : OFF",
-    },
-    "header" : {
-        "team": "TEAM : "
     }
+    
 }
 
 export default literals;

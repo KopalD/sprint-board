@@ -1,5 +1,3 @@
-$primary-back-color: #7c3fee;
-$primary-font-color: #fff;
 
 body {
   overflow-y: hidden;
@@ -15,3 +13,13 @@ body {
   margin-top: 15px;
   padding: 10px 0 0 20px;
 }
+
+// Color Settings
+
+$primary-font-color: #FFFFFF;
+$primary-group-color: #7c3fee;
+
+$to-do-color: #3498db;
+$in-progress-color: #F9D45F;
+$under-testing-color: #F49322;
+$done-color: #16a085;

@@ -18,7 +18,7 @@ class CodeFreezeBoard extends Component {
     }
 
     render() {
-        this.checkStatus();
+        this.update();
 
         if (this.props.codeFreeze) {
             return (
@@ -32,7 +32,7 @@ class CodeFreezeBoard extends Component {
         }
     }
 
-    checkStatus() {
+    update() {
         this.styles = "code-freeze ";
         if (this.props.codeFreeze.enabled) {
             this.styles += "freeze";

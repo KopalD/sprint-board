@@ -30,15 +30,15 @@ th {
   -webkit-border-radius: 50%;
 }
 
-.blue {
-  background-color: #3498db;
+.to-do {
+  background-color: $to-do-color;
 }
-.green {
-  background-color: #16a085;
+.in-progress {
+  background-color: $in-progress-color;
 }
-.yellow {
-  background-color: #F9D45F;
+.under-testing {
+  background-color: $under-testing-color;
 }
-.orange {
-    background-color: #F49322;
-  }
+.done {
+  background-color: $done-color;
+}
