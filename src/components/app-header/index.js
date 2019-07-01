@@ -21,7 +21,7 @@ class AppHeader extends Component {
     }
 
     render() {
-        this.checkStatus();
+        this.preRenderComponent();
 
         return (
             <header className="app-header">
@@ -42,7 +42,7 @@ class AppHeader extends Component {
         );
     }
 
-    checkStatus() {
+    preRenderComponent() {
         this.styles = "build-status-icon ";
         if (this.props.builds) {
             switch (this.props.builds.status) {

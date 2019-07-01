@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import './app.scss';
 import AppHeader from './components/app-header';
+import BuildBoard from './components/build-board';
 import CodeFreezeBoard from './components/freeze-board';
 import DeadlineBoard from './components/deadline-board';
 
 import IssueInfoComponent from './components/Issues';
 import SlaveBoardComponent from './components/slave';
 import ShameBoardComponent from './components/shame';
-import BuildBoardComponent from './components/build';
 import TicketBoardComponent from './components/ticket';
 import AppService from './services/app';
 import StoryBoard from './components/story-board';
@@ -60,7 +60,7 @@ class App extends Component {
 
           <div className="col-md-4">
             <div className="row">
-              <BuildBoardComponent />
+              <BuildBoard />
             </div>
           </div>
 

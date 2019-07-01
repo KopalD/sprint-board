@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import './index.scss';
 
-class BuildBoardComponent extends Component {
+class BuildBoard extends Component {
 
   constructor(props) {
     super(props);
@@ -62,4 +62,4 @@ class BuildBoardComponent extends Component {
   }
 }
 
-export default BuildBoardComponent;
+export default BuildBoard;

@@ -13,7 +13,7 @@ class SlaveBoardComponent extends Component {
         return (
             <div className="slave-board">
                 <span className="header">Slave Board</span>
-                <p class="description">Sack'em all</p>
+                <p class="description">Sack 'em all</p>
                 <div className="category">
                     DEVELOPERS
                 </div>

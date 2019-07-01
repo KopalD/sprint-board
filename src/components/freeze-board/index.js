@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import localization from '../../configs/localization';
+import flake from '../../assets/images/snowflake.png'
 import Loader from '../loader';
 
 import './index.scss';
@@ -23,6 +24,7 @@ class CodeFreezeBoard extends Component {
             return (
                 <div className={this.styles}>
                     {this.message}
+                    <img src={flake} alt="status" className="flake float-right" />
                 </div>
             );
         } else {
