@@ -1,11 +1,11 @@
 import { SPRINT_SPAN } from '../configs/sprint'
-import { updateSprint, updateCodeFreeze } from '../actions';
+import { updateDays, updateCodeFreeze } from '../actions';
 import  DateService  from './date';
 
 class SprintService {
 
     static update(store) {
-        store.dispatch(updateSprint(SprintService.getSprintDetails()));
+        store.dispatch(updateDays(SprintService.getSprintDays()));
 
         const codeFreeze = SprintService.isCodeFreeze();
         if (codeFreeze) {
@@ -15,7 +15,7 @@ class SprintService {
         }
     }
 
-    static getSprintDetails() {
+    static getSprintDays() {
         const sprint = {};
         sprint.completion = DateService.computePercentageRemaining(
             SPRINT_SPAN.START_DATE,

@@ -1,6 +1,6 @@
-const updateSprint = (sprint) => {
+const updateDays = (sprint) => {
     return {
-        type : 'UPDATE_SPRINT',
+        type : 'UPDATE_DAYS',
         payload: sprint
     }
 }
@@ -12,7 +12,15 @@ const updateCodeFreeze = (codeFreeze) => {
     }
 }
 
+const updateStories = (tickets) => {
+    return {
+        type : 'UPDATE_STORIES',
+        payload: tickets
+    }
+}
+
 export  {
-    updateSprint,
-    updateCodeFreeze
+    updateDays,
+    updateCodeFreeze,
+    updateStories
 }

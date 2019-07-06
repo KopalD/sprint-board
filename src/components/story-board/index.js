@@ -15,43 +15,44 @@ class StoryBoard extends Component {
     }
 
     render() {
-        return (
-            <div class="widget story">
-                <span className="header">{this.labels.header}</span>
-                <table className="table col-11">
-                    <tr>
-                        <td><div className="circle to-do"></div></td>
-                        <td>{this.labels.todo}</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td><div className="circle in-progress"></div></td>
-                        <td>{this.labels.progress}</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td><div className="circle under-testing"></div></td>
-                        <td>{this.labels.testing}</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td><div className="circle done"></div></td>
-                        <td>{this.labels.done}</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-            </div>
-        );
-    }
-
-    update() {
-        
+        if (this.props.stories) {
+            const stories = this.props.stories;
+            return (
+                <div class="widget story">
+                    <span className="header">{this.labels.header}</span>
+                    <table className="table col-11">
+                        <tr>
+                            <td><div className="circle to-do"></div></td>
+                            <td>{this.labels.todo}</td>
+                            <td>{stories.status.todo}</td>
+                        </tr>
+                        <tr>
+                            <td><div className="circle in-progress"></div></td>
+                            <td>{this.labels.progress}</td>
+                            <td>{stories.status.progress}</td>
+                        </tr>
+                        <tr>
+                            <td><div className="circle under-testing"></div></td>
+                            <td>{this.labels.testing}</td>
+                            <td>{stories.status.testing}</td>
+                        </tr>
+                        <tr>
+                            <td><div className="circle done"></div></td>
+                            <td>{this.labels.done}</td>
+                            <td>{stories.status.done}</td>
+                        </tr>
+                    </table>
+                </div>
+            );
+        } else {
+            return (<Loader />)
+        }
     }
 }
 
 function mapStateToProps(state) {
     return {
-        sprint: state.codeFreeze
+        stories: state.tickets.stories
     }
 }
 

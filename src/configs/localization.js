@@ -10,6 +10,9 @@ const literals = {
         "done": "Done",
 
     },
+    "issues" : {
+        "header" : "Open Issues",
+    },
     "deadline" : {
         "daysRemaining" : ` Days remaining ...`,
         "deadlineComing" : `Deadline is coming ...`,

@@ -1,4 +1,4 @@
-class IssueTrackerService {
+class TicketTrackerService {
 
     static fetchIssues(api, store) {
         // api.get(ISSUE_TRACKER.URL, params)

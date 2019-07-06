@@ -20,7 +20,7 @@ class CodeFreezeBoard extends Component {
     render() {
         this.update();
 
-        if (this.props.codeFreeze) {
+        if (this.props.sprint) {
             return (
                 <div className={this.styles}>
                     {this.message}
@@ -34,7 +34,7 @@ class CodeFreezeBoard extends Component {
 
     update() {
         this.styles = "code-freeze ";
-        if (this.props.codeFreeze.enabled) {
+        if (this.props.sprint) {
             this.styles += "freeze";
             this.message = this.labels.on;
         } else {
@@ -46,7 +46,7 @@ class CodeFreezeBoard extends Component {
 
 function mapStateToProps(state) {
     return {
-        codeFreeze: state.codeFreeze
+        sprint: state.sprint
     }
 }
 

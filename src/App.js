@@ -6,12 +6,14 @@ import BuildBoard from './components/build-board';
 import CodeFreezeBoard from './components/freeze-board';
 import DeadlineBoard from './components/deadline-board';
 
-import IssueInfoComponent from './components/Issues';
+import StoryBoard from './components/story-board';
+import SprintIssueBoard from './components/issue-board/sprint';
+
+
 import SlaveBoardComponent from './components/slave';
 import ShameBoardComponent from './components/shame';
 import TicketBoardComponent from './components/ticket';
 import AppService from './services/app';
-import StoryBoard from './components/story-board';
 
 class App extends Component {
 
@@ -35,7 +37,7 @@ class App extends Component {
         <div className="row mt-sm-3">
           <div className="col-md-3">
             <StoryBoard />
-            <IssueInfoComponent />
+            <SprintIssueBoard />
           </div>
 
           <div className="col-md-5" hidden>

@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 
 import BuildReducer from './build-reducer';
-import SprintReducer from './sprint-reducer';
-import codeFreezeReducer from './code-freeze-reducer';
+import TicketsReducer from './tickets-reducer';
+import sprintReducer from './sprint-reducer';
 
 const reducers = combineReducers({
-    sprint: SprintReducer,
-    codeFreeze: codeFreezeReducer,
+    tickets: TicketsReducer,
+    sprint: sprintReducer,
     build: BuildReducer,
 })
 
