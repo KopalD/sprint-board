@@ -19,18 +19,22 @@ class DeadlineBoard extends Component {
 
     render() {
         if (this.props.sprint) {
-            return (
-                <div className="deadline">
-                    <div className="sprint-info">
-                        <div className="header">{SPRINT.NAME}</div>
-                        <div>{this.showDays()}</div>
-                    </div>
-                    <ProgressBar variant="danger" now={this.props.sprint.completion} />
-                </div>
-            );
+           return this.view()
         } else {
             return ( <Loader /> );
         }
+    }
+
+    view() {
+        return (
+            <div className="deadline">
+                <div className="sprint-info">
+                    <div className="header">{SPRINT.NAME}</div>
+                    <div>{this.showDays()}</div>
+                </div>
+                <ProgressBar variant="danger" now={this.props.sprint.completion} />
+            </div>
+        );
     }
 
     showDays() {

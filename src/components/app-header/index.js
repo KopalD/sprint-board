@@ -22,7 +22,10 @@ class AppHeader extends Component {
 
     render() {
         this.update();
+        return this.view();
+    }
 
+    view() {
         return (
             <header className="app-header">
                 <div className="row">

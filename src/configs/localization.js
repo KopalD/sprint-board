@@ -13,6 +13,25 @@ const literals = {
     "issues" : {
         "header" : "Open Issues",
     },
+    "slave" : {
+        "header" : "Slave Board",
+        "description" : "Sack 'em all",
+        "developers" : "DEVELOPERS",
+        "testers" : "TESTERS"
+    },
+    "shame": {
+        "header": "Hall of Shame",
+        "quotes" : [
+            "Modern solutions have … modern problems.",
+            "Well , it wasn’t me …. They made me do it!",
+            "Do you think I  choose this way of life? it choose me!",
+            "Look Mom, I am on the Television!",
+            "I loathe testers, their very existence annoys me ...",
+            "\“Whatever can go wrong, will go wrong.\" ~  Murphy’s law",
+            "Some stories are never meant to be shared ...",
+            "Mistakes are the proof that I am trying ..."
+        ]
+    },
     "deadline" : {
         "daysRemaining" : ` Days remaining ...`,
         "deadlineComing" : `Deadline is coming ...`,

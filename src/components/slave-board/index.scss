@@ -1,16 +1,12 @@
 @import "../../app.scss";
 
-.col-md-3 {
-  max-width: 22%;
-}
-
 .category {
   padding: 5px 10px;
-  background: #7c3fee;
+  background: $primary-group-color;
   border-radius: 2px;
   font-size: 14px;
   font-weight: 800;
-  font-family: "Montserrat-SemiBold";
+  font-family: $font-semi-bold;
 }
 
 .slave-board {
@@ -18,13 +14,18 @@
   padding: 0;
 }
 
-.warning {
-  background: #dc3545;
+.dev-group {
+  height: 25vh;
+}
+
+.tester-group {
+  height: 15vh;
 }
 
 .slave-board {
   .table th,
   .table td {
+    color: white;
     padding: 0.4rem;
     font-size: 14px;
   }

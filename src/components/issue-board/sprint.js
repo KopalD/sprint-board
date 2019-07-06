@@ -22,15 +22,19 @@ class SprintIssueBoard extends Component {
         const issues = this.props.issues;
         if (issues) {
             this.update(issues.count);
-            return (
-                <div className={this.styles}>
-                    <span className="header">{this.labels.header}</span>
-                    <div class="issue-count float-right">{issues.count}</div>
-                </div>
-            );
+            return this.view(issues);
         } else {
             return (<Loader />);
         }
+    }
+
+    view(issues) {
+        return (
+            <div className={this.styles}>
+                <span className="header">{this.labels.header}</span>
+                <div class="issue-count float-right">{issues.count}</div>
+            </div>
+        );
     }
 
     update(count) {

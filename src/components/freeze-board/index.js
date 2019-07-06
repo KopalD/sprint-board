@@ -20,17 +20,20 @@ class CodeFreezeBoard extends Component {
     render() {
         const codeFreeze = this.props.codeFreeze;
         if (codeFreeze) {
-        this.update(codeFreeze);
-
-        return (
-                <div className={this.styles}>
-                    {this.message}
-                    <img src={flake} alt="status" className="flake float-right" />
-                </div>
-            );
+            this.update(codeFreeze);
+            return this.view();
         } else {
             return (<Loader />)
         }
+    }
+
+    view() {
+        return (
+            <div className={this.styles}>
+                {this.message}
+                <img src={flake} alt="status" className="flake float-right" />
+            </div>
+        );
     }
 
     update(codeFreeze) {
@@ -46,7 +49,6 @@ class CodeFreezeBoard extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state)
     return {
         codeFreeze: state.sprint.codeFreeze
     }

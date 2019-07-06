@@ -8,10 +8,10 @@ import DeadlineBoard from './components/deadline-board';
 
 import StoryBoard from './components/story-board';
 import SprintIssueBoard from './components/issue-board/sprint';
+import SlaveBoard from './components/slave-board';
 
 
-import SlaveBoardComponent from './components/slave';
-import ShameBoardComponent from './components/shame';
+import ShameBoard from './components/shame-board';
 import TicketBoardComponent from './components/ticket';
 import AppService from './services/app';
 
@@ -47,11 +47,11 @@ class App extends Component {
           <div className="col-md-5">
             <div className="row">
               <div className="col-md-6">
-                <SlaveBoardComponent />
+                <SlaveBoard />
               </div>
               <div className="col-md-6">
                 <div className="row">
-                  <ShameBoardComponent />
+                  <ShameBoard />
                 </div>
                 <div className="row">
                   <CodeFreezeBoard />

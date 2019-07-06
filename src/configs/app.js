@@ -30,4 +30,18 @@ const BUILD_SERVER = {
     }
 }
 
-export {PROJECT, REFRESH_RATE, ISSUE_TRACKER, BUILD_SERVER }
+const DEVELOPERS = [
+    { key: 'nitesh.kumar', name: 'Nitesh Kumar' },
+    { key: 'gaurav.gupta', name: 'Gaurav Gupta' },
+    { key: 'mangesh.padhri', name: 'Mangesh Padhri' },
+    { key: 'kopal.darbari', name: 'Kopal Darbari' },
+    { key: 'zubair.khan', name: 'Zubair Khan' },
+    { key: 'pushkar.kinkar', name: 'Pushkar Kinkar' }
+]
+const TESTERS = [
+    { key: 'anu.singla', name: 'Anu Singla' },
+    { key: 'vikas.giri', name: 'Vikas Giri' },
+    { key: 'ajendra.singh', name: 'Ajendra Singh' },
+]
+
+export { PROJECT, REFRESH_RATE, ISSUE_TRACKER, BUILD_SERVER, DEVELOPERS, TESTERS }
