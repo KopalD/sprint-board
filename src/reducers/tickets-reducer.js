@@ -18,6 +18,7 @@ const initialState = {
             "testing": 2,
             "done": 1
         },
+        "shame": { "name" : "Gaurav Gupta"},
         "items" : [],
         "assignee" : [
             {   "username": "nit",

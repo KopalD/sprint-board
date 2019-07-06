@@ -36,17 +36,18 @@ class ShameBoard extends Component {
                     <img src={face} alt="shame-face" className="face" />
                 </div>
                 <p className="shame-name">
-                    {user.name}lol
+                    {user.name}
                 </p>
                 <div className="shame-description">
-                    {this.quote} something just like this...
+                    {this.quote}
                 </div>
             </div>
         );
     }
 
     update() {
-
+        const random = this.generateRandomNumber(1, this.labels.quotes.length);
+        this.quote = this.labels.quotes[random - 1];
     }
 
     generateRandomNumber(min, max) {
@@ -55,7 +56,7 @@ class ShameBoard extends Component {
 }
 function mapStateToProps(state) {
     return {
-        user: state.build
+        user: state.tickets.issues.shame
     };
 }
 
