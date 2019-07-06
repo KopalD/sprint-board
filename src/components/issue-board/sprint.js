@@ -1,6 +1,6 @@
 
-import React, { Component } from './node_modules/react';
-import { connect } from './node_modules/react-redux';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import localization from '../../configs/localization';
 import Loader from '../loader';
