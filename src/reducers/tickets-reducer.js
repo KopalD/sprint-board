@@ -9,6 +9,17 @@ const initialState = {
         },
         "items" : [] 
 
+    },
+    "issues" : {
+        "count": 5,
+        "status": {
+            "todo": 3,
+            "progress": 4,
+            "testing": 2,
+            "done": 1
+        },
+        "items" : [] 
+
     }
 }
 

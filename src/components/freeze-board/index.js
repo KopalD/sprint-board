@@ -18,10 +18,11 @@ class CodeFreezeBoard extends Component {
     }
 
     render() {
-        this.update();
+        const codeFreeze = this.props.codeFreeze;
+        if (codeFreeze) {
+        this.update(codeFreeze);
 
-        if (this.props.sprint) {
-            return (
+        return (
                 <div className={this.styles}>
                     {this.message}
                     <img src={flake} alt="status" className="flake float-right" />
@@ -32,9 +33,9 @@ class CodeFreezeBoard extends Component {
         }
     }
 
-    update() {
+    update(codeFreeze) {
         this.styles = "code-freeze ";
-        if (this.props.sprint) {
+        if (codeFreeze.enabled) {
             this.styles += "freeze";
             this.message = this.labels.on;
         } else {
@@ -45,8 +46,9 @@ class CodeFreezeBoard extends Component {
 }
 
 function mapStateToProps(state) {
+    console.log(state)
     return {
-        sprint: state.sprint
+        codeFreeze: state.sprint.codeFreeze
     }
 }
 

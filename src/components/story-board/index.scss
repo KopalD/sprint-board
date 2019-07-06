@@ -2,20 +2,17 @@
 
 .story {
   height: 40vh;
-  background: #3e4249;
-}
-
-td {
-  color: #fff;
+  background: $widget-color;
 }
 
 .story table {
   margin-top: 20px;
-  font-family: "Montserrat-Regular";
+  color: $primary-font-color;
+  font-family: $font-regular;
   font-size: 14px;
 }
 
-.circle {
+.indicator {
   width: 20px;
   height: 20px;
   line-height: 20px;

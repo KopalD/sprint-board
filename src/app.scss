@@ -14,10 +14,14 @@ body {
   padding: 10px 0 0 20px;
 }
 
-// Color Settings
+// Font Settings
+$font-regular: "Montserrat-Regular";
+$font-semi-bold: "Montserrat-SemiBold";
 
+// Color Settings
 $primary-font-color: #FFFFFF;
 $primary-group-color: #7c3fee;
+$widget-color: #3e4249;
 
 $to-do-color: #3498db;
 $in-progress-color: #F9D45F;

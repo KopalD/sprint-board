@@ -1,17 +1,21 @@
 @import "../../app.scss";
 
-.issues-info {
+$issue-board-normal : #FFFFFF;
+$issue-board-warning : #EEA033;
+$issue-board-danger : #DC3545;
+
+.sprint-issue {
   height: 20vh;
-  background: #fff;
+  background: $issue-board-normal;
   color: black;
 }
 
-.issues-info .header {
-  font-family: "Montserrat-SemiBold";
+.sprint-issue .header {
+  font-family: $font-semi-bold;
   font-size: 25px;
 }
 
-.numberCircle {
+.issue-count {
   width: 65px;
   line-height: 65px;
   border-radius: 50%;
@@ -21,12 +25,12 @@
   margin: 15px 20px;
 }
 
-.widget-normal {
-  background: rgb(238, 160, 51);
-  color: #000;
+.st-warning {
+  background: $issue-board-warning;
+  color: black;;
 }
 
-.widget-warning {
-  background: #DC3545;
-  color: #FFF;
+.st-danger {
+  background: $issue-board-danger;
+  color: white;
 }

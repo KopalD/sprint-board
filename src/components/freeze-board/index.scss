@@ -11,7 +11,7 @@ $freeze-active : #00a5b7;
   border-radius: 10px;
   color: $primary-font-color;
   background: $freeze-inactive;
-  font-family: "Montserrat-SemiBold";
+  font-family: $font-semi-bold;
   font-size: 20px;
   overflow: hidden;
 }
@@ -20,7 +20,7 @@ $freeze-active : #00a5b7;
   background: $freeze-active;
 }
 
-.flake{
+.flake {
   height: 150px;
   width: 150px;
   opacity: 0.4;
