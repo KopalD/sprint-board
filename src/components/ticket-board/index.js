@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import './index.scss';
 
-class TicketBoardComponent extends Component {
+class TicketBoard extends Component {
 
   constructor(props) {
     super(props);
@@ -45,7 +45,7 @@ class TicketBoardComponent extends Component {
                           <td>Nitesh Kumar</td>
                           <td>M</td>
                       </tr>
-                      <tr>
+                      <tr className="done">
                           <td> CCF-1609 </td>
                           <td> UI + Integration : Check positive pay : Record Activity </td>
                           <td>Nitesh Kumar</td>
@@ -59,4 +59,4 @@ class TicketBoardComponent extends Component {
   }
 }
 
-export default TicketBoardComponent;
+export default TicketBoard;

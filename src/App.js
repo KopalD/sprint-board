@@ -12,7 +12,7 @@ import SlaveBoard from './components/slave-board';
 
 
 import ShameBoard from './components/shame-board';
-import TicketBoardComponent from './components/ticket';
+import TicketsBoard from './components/ticket-board';
 import AppService from './services/app';
 
 class App extends Component {
@@ -41,7 +41,7 @@ class App extends Component {
           </div>
 
           <div className="col-md-5" hidden>
-            <TicketBoardComponent />
+            <TicketsBoard />
           </div>
 
           <div className="col-md-5">

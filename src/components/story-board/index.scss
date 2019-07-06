@@ -3,6 +3,20 @@
 .story {
   height: 40vh;
   background: $widget-color;
+
+  .to-do {
+    background-color: $to-do-color;
+  }
+  .in-progress {
+    background-color: $in-progress-color;
+  }
+  .under-testing {
+    background-color: $under-testing-color;
+  }
+  .done {
+    background-color: $done-color;
+  }
+  
 }
 
 .story table {
@@ -19,17 +33,4 @@
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-}
-
-.to-do {
-  background-color: $to-do-color;
-}
-.in-progress {
-  background-color: $in-progress-color;
-}
-.under-testing {
-  background-color: $under-testing-color;
-}
-.done {
-  background-color: $done-color;
 }
