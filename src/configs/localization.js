@@ -27,7 +27,7 @@ const literals = {
             "Do you think I  choose this way of life? it choose me!",
             "Look Mom, I am on the Television!",
             "I loathe testers, their very existence annoys me ...",
-            "\“Whatever can go wrong, will go wrong.\" ~  Murphy’s law",
+            "\"Whatever can go wrong, will go wrong.\" ~  Murphy’s law",
             "Some stories are never meant to be shared ...",
             "Mistakes are the proof that I am trying ..."
         ]
@@ -39,6 +39,22 @@ const literals = {
     "codeFreeze": {
         "on" : "CODE FREEZE : ON",
         "off" : "CODE FREEZE : OFF",
+    },
+    "builds" : {
+        "header" : "Build Status",
+        "buildStatus": "BUILD STATUS",
+        "buildVersion": "BUILD VERSION",
+        "lastUpdated": "LAST UPDATED",
+        "triggeredBy": "TRIGGERED BY"
+    },
+    "tickets": {
+        "header" : {
+            "stories" : "Stories",
+            "issues" : "Issues"
+        }
+    },
+    "backlog" : {
+        "header" : "Backlog Bag"
     }
     
 }

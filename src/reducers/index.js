@@ -7,7 +7,7 @@ import sprintReducer from './sprint-reducer';
 const reducers = combineReducers({
     tickets: TicketsReducer,
     sprint: sprintReducer,
-    build: BuildReducer,
+    builds: BuildReducer,
 })
 
 export default reducers;

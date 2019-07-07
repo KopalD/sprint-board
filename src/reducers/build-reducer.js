@@ -1,7 +1,7 @@
 import { BUILD_STATUS } from "../constants/builds";
 
 const initialState = {
-    "status": BUILD_STATUS.OFFLINE,
+    "status": BUILD_STATUS.PASSING,
     "builds" : [
         {
             "id": "",
@@ -22,5 +22,14 @@ const initialState = {
 }
 
 export default function(state = initialState, action) {
-    return initialState;
-}
+
+    switch(action.type) {
+
+        case "UPDATE_BUILDS": {
+            state = { ...state,
+                builds: action.payload
+             }
+             break;
+        }
+    }
+    return state;}

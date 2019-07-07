@@ -10,10 +10,10 @@ import StoryBoard from './components/story-board';
 import SprintIssueBoard from './components/issue-board/sprint';
 import SlaveBoard from './components/slave-board';
 
-
 import ShameBoard from './components/shame-board';
 import TicketsBoard from './components/ticket-board';
 import AppService from './services/app';
+import BacklogBoard from './components/backlog-board';
 
 class App extends Component {
 
@@ -51,7 +51,7 @@ class App extends Component {
               </div>
               <div className="col-md-6">
                 <div className="row">
-                  <ShameBoard />
+                  <BacklogBoard />
                 </div>
                 <div className="row">
                   <CodeFreezeBoard />
