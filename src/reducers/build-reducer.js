@@ -1,7 +1,7 @@
 import { BUILD_STATUS } from "../constants/builds";
 
 const initialState = {
-    "status": BUILD_STATUS.PASSING,
+    "status": BUILD_STATUS.OFFLINE,
     "builds" : [
         {
             "id": "",

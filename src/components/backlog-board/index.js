@@ -7,7 +7,6 @@ import Loader from '../loader';
 
 import './index.scss';
 
-
 class BacklogBoard extends Component {
 
     constructor(props) {
@@ -17,7 +16,7 @@ class BacklogBoard extends Component {
 
     render() {
         const items = this.props.backlog;
-        if (!items) {
+        if (items) {
             return this.view(items);
         } else {
             return (<Loader />);
@@ -26,17 +25,14 @@ class BacklogBoard extends Component {
 
     view(items) {
         return (
-            <div className="col-12 shame-board">
+            <div className="col-12 backlog-board">
             <div class="author">
                 <span className="header">{this.labels.header}</span>
             </div>
             <div className="backlog-items">
-                76
+                {items.count}
             </div>
-            <p className="shame-name">Items
-            </p>
-            <div className="shame-description">
-            </div>
+            <p className="sub-text">{this.labels.itemsRemaining}</p>
         </div>
         );
     }
@@ -44,7 +40,7 @@ class BacklogBoard extends Component {
 
 function mapStateToProps(state) {
     return {
-        issues: state.tickets.backlog
+        backlog: state.tickets.backlog
     }
 }
 

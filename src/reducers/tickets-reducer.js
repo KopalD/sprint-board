@@ -67,6 +67,10 @@ const initialState = {
                 "count": 0,
             }
         ]
+    },
+    "backlog" : {
+        "count": 105,
+        "items" : []
     }
 }
 
@@ -75,13 +79,19 @@ export default function (state = initialState, action) {
     switch (action.type) {
         case "UPDATE_STORIES": {
             state = { ...state,
-                stories: action.payload.stories,
+                stories: action.payload,
              }
              break;
         }
         case "UPDATE_ISSUES": {
             state = { ...state,
-                issues: action.payload.issues,
+                issues: action.payload,
+             }
+             break;
+        }
+        case "UPDATE_BACKLOG": {
+            state = { ...state,
+                backlog: action.payload,
              }
              break;
         }

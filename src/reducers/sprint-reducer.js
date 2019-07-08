@@ -20,8 +20,9 @@ export default function(state = initialState, action) {
              break;
         }
         case "CODE_FREEZE": {
+            console.log('t',action.payload)
             state = { ...state,
-                codeFreeze: action.payload.codeFreeze
+                codeFreeze: action.payload
              }
              break;
         }
