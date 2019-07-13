@@ -75,9 +75,12 @@ class SlaveBoard extends Component {
 }
 
 function mapStateToProps(state) {
-    return {
-        slaves: state.tickets.issues.assignee
-    }
+    if (state.tickets.issues) {
+        return {
+            slaves: state.tickets.issues.assignee
+        }
+    } else { return undefined }
+    
 }
 
 export default connect(mapStateToProps)(SlaveBoard);

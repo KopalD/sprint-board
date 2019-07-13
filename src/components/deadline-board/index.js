@@ -40,11 +40,11 @@ class DeadlineBoard extends Component {
     showDays() {
         if (this.props.sprint.daysRemaining > DAYS_THRESHOLD) {
             return (
-                <span> {this.props.sprint.daysRemaining} {this.labels.daysRemaining}</span>
+                <span>{this.props.sprint.daysRemaining} {this.labels.daysRemaining}</span>
             );
         } else {
             return (
-                <span> {this.labels.deadlineComing}</span>
+                <span>{this.labels.deadlineComing}</span>
             );
         }
     }

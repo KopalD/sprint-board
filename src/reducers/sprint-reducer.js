@@ -1,14 +1,6 @@
+import { SPRINT } from "./default";
 
-const initialState = {
-    "completion": 60,
-    "daysRemaining": 6,
-    "codeFreeze" : {
-        "enabled" : false
-    },
-    "lastValues": []
-}
-
-export default function(state = initialState, action) {
+export default function(state = SPRINT.initialState(), action) {
 
     switch(action.type) {
 

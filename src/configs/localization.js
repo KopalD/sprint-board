@@ -54,7 +54,7 @@ const literals = {
         }
     },
     "backlog" : {
-        "header" : "Backlog",
+        "header" : "Backlog Bag",
         "itemsRemaining" : "Item(s) Remaining"
     }
     

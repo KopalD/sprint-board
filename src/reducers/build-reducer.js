@@ -1,35 +1,20 @@
-import { BUILD_STATUS } from "../constants/builds";
+import { BUILD } from "./default";
 
-const initialState = {
-    "status": BUILD_STATUS.OFFLINE,
-    "builds" : [
-        {
-            "id": "",
-            "name": "",
-            "status": "",
-            "buildNumber": "",
-            "lastUpdated": "",
-            "triggeredBy": "",
-            "lastFailed": "",
-            "history" : [{
-                "status": "",
-                "buildNumber": "",
-                "lastUpdated": "",
-                "triggeredBy": "",
-            }]
-        }
-    ]
-}
+export default function (state = BUILD.initialState(), action) {
 
-export default function(state = initialState, action) {
-
-    switch(action.type) {
+    switch (action.type) {
 
         case "UPDATE_BUILDS": {
-            state = { ...state,
-                builds: action.payload
-             }
-             break;
+            state = action.payload
+            break;
+        }
+        case "UPDATE_BUILD_STATUS": {
+            state = {
+                ...state,
+                status: action.payload
+            }
+            break;
         }
     }
-    return state;}
+    return state;
+}

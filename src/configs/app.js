@@ -1,7 +1,8 @@
 const PROJECT = {
     NAME: "CBS: CORPORATE",
     VERSION: "1.0",
-    TEAM: "BRAHMOS"
+    TEAM: "BRAHMOS",
+    DEMO_MODE: true
 }
 
 const REFRESH_RATE = {

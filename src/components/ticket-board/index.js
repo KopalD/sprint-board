@@ -27,10 +27,10 @@ class TicketBoard extends Component {
 
   update(tickets) {
     const mode = this.props.mode;
-    if (mode ===  modes.ISSUES) {
+    if (mode ===  TICKET_TYPE.ISSUE) {
       this.header = localization.tickets.header.issues;
       tickets = tickets.issues;
-    } else if (mode !==  modes.STORY) {
+    } else if (mode !==  TICKET_TYPE.STORY) {
       this.header = localization.tickets.header.stories;
       tickets = tickets.stories;
     }
@@ -38,7 +38,7 @@ class TicketBoard extends Component {
   }
 
   renderTicket(ticket) {
-    return (<tr className="to-do">
+    return ( <tr className="to-do">
               <td> {ticket.id} </td>
               <td> {ticket.title} </td>
               <td> {ticket.assigneeName} </td>
@@ -63,8 +63,8 @@ class TicketBoard extends Component {
   }
 }
 
-export const modes = {
-  ISSUES  : "ISSUES",
+export const TICKET_TYPE = {
+  ISSUE  : "ISSUE",
   STORY : "STORY",
 }
 
